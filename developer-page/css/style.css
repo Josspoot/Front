@@ -38,8 +38,15 @@ body {
   padding: 1rem;
 }
 
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
+  background-color: var(--secundario);
+}
+
 .navegacion-principal a:hover {
   background-color: var(--primario);
+  color: red;
 }
 
 .navegacion-principal a:active {
