@@ -1,79 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/normalize.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="reload" href="css/style.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Developer Página</title>
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
-      <h1 class="titulo">Josue Poot Mateo <span> Developer </span></h1>
+      <h1 class="my-title">
+        Josue Poot Mateo
+        <span>Developer</span>
+      </h1>
     </header>
 
+    <!-- NAVEGACIÓN -->
     <div class="nav-bg">
       <nav class="navegacion-principal contenedor">
         <a href="#">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#clientes">Clientes</a>
-        <a href="#contactos">Contactos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
       </nav>
-      <section class="hero">
-        <div class="contenido-hero">
-          <h2 class="subtitulo">Desarrollador backend - Mercados capitales</h2>
-        </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#607d8b"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-          <path
-            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-          />
-        </svg>
-
-        <div class="ubicacion">
-          <p>Mérida, Yucatán</p>
-        </div>
-      </section>
     </div>
 
-    <section>
-      <h2>Desarrollador mobile</h2>
-      <!--
-    category: Map
-    tags: [navigation, location, travel, pin, position, marker]
-    version: "1.0"
-    unicode: "eae8"
-    --></section>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="contenido-hero">
+        <h2>Desarrollador Backend - Mercados Capitales</h2>
 
-    <main>
-      <h2>Mis servvicios</h2>
+        <div class="ubicacion">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffc107"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+            <path
+              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+            />
+          </svg>
+
+          <p>Mérida, Yucatán</p>
+        </div>
+
+        <a class="boton" href="#contacto"> Contáctame </a>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="contenedor">
+      <h2>Desarrollador Mobile</h2>
+
+      <p>
+        Soy desarrollador enfocado en la creación de soluciones de software,
+        aplicaciones web y sistemas backend.
+      </p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <main id="servicios" class="contenedor">
+      <h2>Mis servicios</h2>
+
+      <!-- DISEÑO WEB -->
       <section>
-        <h3>Diseño web</h3>
-        <!--
-      category: Design
-      tags: [color, paint, painter, picture, board, artist]
-      version: "1.1"
-      unicode: "eb01"
-      -->
+        <h3>Diseño Web</h3>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -94,13 +106,16 @@
         </svg>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Desarrollo de sitios web modernos, responsivos y adaptados a las
+          necesidades del cliente.
         </p>
       </section>
 
+      <!-- APLICACIONES MÓVILES -->
       <section>
-        <h3>Aplicaciones moviles</h3>
+        <h3>Aplicaciones Móviles</h3>
+
+        <!-- Android -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -123,6 +138,7 @@
           <path d="M15 18l0 3" />
         </svg>
 
+        <!-- Apple -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -141,13 +157,15 @@
         </svg>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Desarrollo de aplicaciones móviles para Android y iOS con interfaces
+          modernas y funcionales.
         </p>
       </section>
 
+      <!-- INTELIGENCIA ARTIFICIAL -->
       <section>
         <h3>Soluciones con IA</h3>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -178,46 +196,51 @@
         </svg>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Implementación de soluciones utilizando inteligencia artificial para
+          automatizar procesos y mejorar aplicaciones.
         </p>
       </section>
     </main>
 
-    <section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contenedor">
       <h2>Contacto</h2>
+
       <form>
         <fieldset>
-          <legend>Llena tus datos de contactos</legend>
+          <legend>Llena tus datos de contacto</legend>
+
           <div>
-            <label>Nombre completo</label>
-            <input type="text" placeholder="Nombre completo" />
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" type="text" placeholder="Nombre completo" />
           </div>
 
           <div>
-            <label>Teléfono</label>
-            <input type="tel" placeholder="Número de teléfono+" />
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" type="tel" placeholder="Número de teléfono" />
           </div>
 
           <div>
-            <label>Email</label>
-            <input type="email" placeholder="Correo electrónico" />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Correo electrónico" />
           </div>
 
           <div>
-            <label>Mensaje</label>
-            <textarea placeholder="Escribe tu mensaje"></textarea>
+            <label for="mensaje">Mensaje</label>
+
+            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
           </div>
 
           <div>
-            <button type="submit">Enviar</button>
+            <button class="boton" type="submit">Enviar</button>
           </div>
         </fieldset>
       </form>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-      <p>Todos los deres reservados ©️ Josue Poot Mateo 2026</p>
+      <p>Todos los derechos reservados © Josue Poot Mateo 2026</p>
     </footer>
   </body>
 </html>
